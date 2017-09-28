@@ -7,7 +7,7 @@ function frameIt(){
   $('img').on('load',function(e){
     $(this).addClass('tasty')
   }) */
-  $('img').on('load',$(this).addClass('tasty'))
+  $('img').on('load',function(){$(this).addClass('tasty')})
 }
 function pressIt(){
   $('input').on('keydown',function(e){
